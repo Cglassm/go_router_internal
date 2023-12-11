@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router_ui/go_router_ui.dart';
 
 class ErrorPage extends StatelessWidget {
   const ErrorPage({super.key});
