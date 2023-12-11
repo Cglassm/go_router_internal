@@ -13,7 +13,7 @@ final class ProfileState extends Equatable {
   });
 
   const ProfileState.initial()
-      : this(        
+      : this(
           status: ProfileStatus.initial,
         );
 

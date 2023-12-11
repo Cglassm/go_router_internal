@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class GRColors {
- /// Black
+  /// Black
   static const Color black = Color(0xFF000000);
 
   /// White
@@ -89,7 +89,4 @@ abstract class GRColors {
     800: Color(0xFF5F0F40),
     900: Color(0xFF3D0026),
   });
-
-
-
 }

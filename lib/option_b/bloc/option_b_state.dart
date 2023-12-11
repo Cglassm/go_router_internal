@@ -13,7 +13,7 @@ final class OptionBState extends Equatable {
   });
 
   const OptionBState.initial()
-      : this(        
+      : this(
           status: OptionBStatus.initial,
         );
 

@@ -9,7 +9,7 @@ extension ThemeX on ThemeData {
     if (isDarkMode) {
       return GRIconsDark();
     } else {
-      return  GRIconsLight();
+      return GRIconsLight();
     }
   }
 }

@@ -13,7 +13,7 @@ final class SettingsState extends Equatable {
   });
 
   const SettingsState.initial()
-      : this(        
+      : this(
           status: SettingsStatus.initial,
         );
 

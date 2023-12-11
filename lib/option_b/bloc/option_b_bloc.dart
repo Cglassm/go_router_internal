@@ -5,7 +5,7 @@ part 'option_b_event.dart';
 part 'option_b_state.dart';
 
 class OptionBBloc extends Bloc<OptionBEvent, OptionBState> {
-  OptionBBloc() : super(const OptionBState.initial()){
+  OptionBBloc() : super(const OptionBState.initial()) {
     on<OptionBEvent>(_onOptionBEvent);
   }
 
