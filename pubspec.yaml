@@ -14,7 +14,7 @@ dependencies:
   flutter_bloc: ^8.1.3
   flutter_localizations:
     sdk: flutter
-  go_router: ^12.1.1
+  go_router: ^12.1.3
   go_router_ui:
     path: packages/go_router_ui
   intl: ^0.18.0
