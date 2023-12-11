@@ -13,7 +13,7 @@ final class HomeState extends Equatable {
   });
 
   const HomeState.initial()
-      : this(        
+      : this(
           status: HomeStatus.initial,
         );
 

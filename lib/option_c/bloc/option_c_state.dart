@@ -13,7 +13,7 @@ final class OptionCState extends Equatable {
   });
 
   const OptionCState.initial()
-      : this(        
+      : this(
           status: OptionCStatus.initial,
         );
 

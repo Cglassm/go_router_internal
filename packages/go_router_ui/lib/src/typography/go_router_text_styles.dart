@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router_ui/go_router_ui.dart';
 
-
 //extension for font weights
 
 abstract class GRTextStyle {
@@ -105,5 +104,4 @@ abstract class GRTextStyle {
     height: 1.45,
     letterSpacing: 0.5,
   );
-
 }

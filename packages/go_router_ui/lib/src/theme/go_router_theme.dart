@@ -3,7 +3,6 @@ import 'package:go_router_ui/go_router_ui.dart';
 import 'package:flutter/services.dart';
 
 class GRTheme {
-
   /// Light Theme example based on Material 2 Design.
   ThemeData get lightTheme {
     return ThemeData(
@@ -424,5 +423,4 @@ class GRTheme {
       ),
     );
   }
-
 }

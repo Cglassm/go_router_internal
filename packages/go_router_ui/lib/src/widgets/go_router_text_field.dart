@@ -3,8 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:go_router_ui/go_router_ui.dart';
 
 class GRTextField extends StatelessWidget {
-
-    const GRTextField({
+  const GRTextField({
     super.key,
     this.initialValue,
     this.autoFillHints,
@@ -25,7 +24,7 @@ class GRTextField extends StatelessWidget {
 
   /// A text field component based on material [TextFormField] widget which
   /// extends TextField with email icon and validates input type.
-   const GRTextField.emailTextField({
+  const GRTextField.emailTextField({
     super.key,
     this.initialValue,
     this.controller,
@@ -52,9 +51,9 @@ class GRTextField extends StatelessWidget {
         ),
         autocorrect = false;
 
-    /// A password text field component based on material [TextFormField] widget which
-    /// extends TextField which obscures the text
-   const GRTextField.passwordTextField({
+  /// A password text field component based on material [TextFormField] widget which
+  /// extends TextField which obscures the text
+  const GRTextField.passwordTextField({
     super.key,
     this.initialValue,
     this.controller,
@@ -72,8 +71,7 @@ class GRTextField extends StatelessWidget {
         obscureText = true,
         autocorrect = false;
 
-
- /// A value to initialize the field to.
+  /// A value to initialize the field to.
   final String? initialValue;
 
   /// List of auto fill hints.

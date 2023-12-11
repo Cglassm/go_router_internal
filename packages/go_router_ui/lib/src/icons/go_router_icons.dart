@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router_ui/src/generated/assets.gen.dart';
 
 abstract class GRIcon {
-    ///Returns the back icon
+  ///Returns the back icon
   SvgPicture backIcon({double? size, Color? color}) {
     return Assets.icons.backIcon.svg(
       color: color,
@@ -20,5 +20,4 @@ abstract class GRIcon {
       width: size ?? 14,
     );
   }
-
 }

@@ -5,7 +5,7 @@ part 'profile_event.dart';
 part 'profile_state.dart';
 
 class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
-  ProfileBloc() : super(const ProfileState.initial()){
+  ProfileBloc() : super(const ProfileState.initial()) {
     on<ProfileEvent>(_onProfileEvent);
   }
 

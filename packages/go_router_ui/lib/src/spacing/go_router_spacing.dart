@@ -1,5 +1,4 @@
 abstract class GRSpacing {
-  
   /// The default unit of spacing
   static const double spaceUnit = 16;
 
@@ -32,8 +31,7 @@ abstract class GRSpacing {
 
   /// xxxlg spacing value (88pt)
   static const double xxxxlg = 5.5 * spaceUnit;
-  
+
   /// s10
   static const double s10 = 10;
-  
 }
