@@ -19,33 +19,6 @@ class AppRouter {
     return GoRouter(
       navigatorKey: rootNavigatorKey,
       initialLocation: HomePage.path,
-      // redirect: (context, state) async {
-      //   // final isLoadingUser = AuthStreamScope.of(context).isLoadingUser;
-      //   // if (isLoadingUser) {
-      //   //   return LoadingPage.path;
-      //   // }
-
-      //   // final isAuthenticated = AuthStreamScope.of(context).isSignedIn;
-      //   // final isUnauthenticated = AuthStreamScope.of(context).isSignedOut;
-      //   // final isOnSignedOutView = unauthenticatedRoutes.contains(
-      //   //   state.fullPath,
-      //   // );
-      //   // final isOnSignUpView = signUpRoutes.contains(state.fullPath);
-      //   // final isOnLoadingView = LoadingPage.path == state.fullPath;
-      //   // final isOnUnauthenticatedView = isOnSignedOutView || isOnSignUpView;
-
-      //   // if (isAuthenticated && (isOnSignedOutView || isOnLoadingView)) {
-      //   //   return HomePage.path;
-      //   // } else if (isAuthenticated && isOnSignUpView) {
-      //   //   return null;
-      //   // } else if (isUnauthenticated && isOnUnauthenticatedView) {
-      //   //   return null;
-      //   // } else if (isUnauthenticated) {
-      //   //   return OnboardingPage.path;
-      //   // }
-
-      //   return null;
-      // },
       routes: [
         GoRoute(
           path: LoadingPage.path,
@@ -96,16 +69,19 @@ class AppRouter {
           ],
         ),
         GoRoute(
+          parentNavigatorKey: rootNavigatorKey,
           path: OptionAPage.path,
           name: OptionAPage.path,
           builder: (context, state) => const OptionAPage(),
         ),
         GoRoute(
+          parentNavigatorKey: rootNavigatorKey,
           path: OptionBPage.path,
           name: OptionBPage.path,
           builder: (context, state) => const OptionBPage(),
         ),
         GoRoute(
+          parentNavigatorKey: rootNavigatorKey,
           path: OptionCPage.path,
           name: OptionCPage.path,
           builder: (context, state) => const OptionCPage(),
