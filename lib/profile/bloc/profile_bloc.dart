@@ -1,0 +1,16 @@
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+part 'profile_event.dart';
+part 'profile_state.dart';
+
+class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
+  ProfileBloc() : super(const ProfileState.initial()){
+    on<ProfileEvent>(_onProfileEvent);
+  }
+
+  void _onProfileEvent(
+    ProfileEvent event,
+    Emitter<ProfileState> emit,
+  ) {}
+}
