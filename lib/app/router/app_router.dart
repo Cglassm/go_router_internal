@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_router_internal/app/app.dart';
 import 'package:go_router_internal/error/error.dart';
 import 'package:go_router_internal/home/home.dart';
 import 'package:go_router_internal/loading/loading.dart';
@@ -18,7 +20,22 @@ class AppRouter {
   static GoRouter router() {
     return GoRouter(
       navigatorKey: rootNavigatorKey,
-      initialLocation: HomePage.path,
+      initialLocation: OnboardingPage.path,
+      redirect: (context, state) {
+        final isAuthenticated = context.read<AppBloc>().state.isAuthenticated;
+        // final location = GoRouterState.of(context).uri.toString();
+        // final current = location;
+
+        // if (!isAuthenticated && location != LoginPage.path) {
+        //   return LoginPage.path;
+        // }
+
+        if (isAuthenticated && state.uri.toString() == OnboardingPage.path) {
+          return HomePage.path;
+        }
+
+        return null;
+      },
       routes: [
         GoRoute(
           path: LoadingPage.path,
