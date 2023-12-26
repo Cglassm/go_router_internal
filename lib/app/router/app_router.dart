@@ -19,18 +19,6 @@ class AppRouter {
       navigatorKey: rootNavigatorKey,
       initialLocation: OnboardingPage.path,
       redirect: (context, state) {
-        // final isAuthenticated = context.read<AppBloc>().state.isAuthenticated;
-        // final location = GoRouterState.of(context).uri.toString();
-        // final current = location;
-
-        // if (!isAuthenticated && location != LoginPage.path) {
-        //   return LoginPage.path;
-        // }
-
-        // if (isAuthenticated && state.uri.toString() == OnboardingPage.path) {
-        //   return HomePage.path;
-        // }
-
         return null;
       },
       routes: [
