@@ -11,9 +11,9 @@ class OnboardingView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: GROutlinedButton.secondary(
-          text: 'go home',
-          onPressed: () => context.push(HomePage.path),
+        child: GROutlinedButton.primary(
+          text: 'GO HOME  ',
+          onPressed: () => context.go(HomePage.path),
         ),
       ),
     );
